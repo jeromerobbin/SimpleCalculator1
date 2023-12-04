@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <input type="text" id="display" disabled />
+      <div class="buttons">
+        <div class="row">
+          <input
+            type="button"
+            value="C"
+            onclick="clearDisplay()"
+            class="clear"
+          />
+          <input
+            type="button"
+            value="/"
+            onclick="addToDisplay('/')"
+            class="operator"
+          />
+        </div>
+        <div class="row">
+          <input
+            type="button"
+            value="7"
+            onclick="addToDisplay('7')"
+            class="number"
+          />
+          <input
+            type="button"
+            value="8"
+            onclick="addToDisplay('8')"
+            class="number"
+          />
+          <input
+            type="button"
+            value="9"
+            onclick="addToDisplay('9')"
+            class="number"
+          />
+          <input
+            type="button"
+            value="*"
+            onclick="addToDisplay('*')"
+            class="operator"
+          />
+        </div>
+        <div class="row">
+          <input
+            type="button"
+            value="4"
+            onclick="addToDisplay('4')"
+            class="number"
+          />
+          <input
+            type="button"
+            value="5"
+            onclick="addToDisplay('5')"
+            class="number"
+          />
+          <input
+            type="button"
+            value="6"
+            onclick="addToDisplay('6')"
+            class="number"
+          />
+          <input
+            type="button"
+            value="-"
+            onclick="addToDisplay('-')"
+            class="operator"
+          />
+        </div>
+        <div class="row">
+          <input
+            type="button"
+            value="1"
+            onclick="addToDisplay('1')"
+            class="number"
+          />
+          <input
+            type="button"
+            value="2"
+            onclick="addToDisplay('2')"
+            class="number"
+          />
+          <input
+            type="button"
+            value="3"
+            onclick="addToDisplay('3')"
+            class="number"
+          />
+          <input
+            type="button"
+            value="+"
+            onclick="addToDisplay('+')"
+            class="operator"
+          />
+        </div>
+        <div class="row">
+          <input
+            type="button"
+            value="0"
+            onclick="addToDisplay('0')"
+            class="number"
+          />
+          <input
+            type="button"
+            value="."
+            onclick="addToDisplay('.')"
+            class="number"
+          />
+          <input
+            type="button"
+            value="="
+            onclick="calculate()"
+            class="calculate"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

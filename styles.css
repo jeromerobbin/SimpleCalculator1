@@ -1,0 +1,80 @@
+/* Styling for the calculator */
+
+.calculator {
+    width: 340px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #050000;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(247, 247, 247, 0.1);
+    background-color: #fffbfbf3;
+    background: linear-gradient(to bottom, #050000,#a7af82);
+  }
+  
+  input[type="text"] {
+    width: calc(100% - 16px);
+    flex: 1;
+    margin: 10px;
+    padding: 30px;
+    font-size: 30px;
+    height: 60px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    text-align: right;
+    background-color: rgb(249, 249, 249);
+    box-sizing: border-box;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    overflow: hidden;
+    
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  
+  input[type="button"] {
+    flex: 1;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+  }
+  
+  input[type="button"]:hover {
+    transform: scale(1.05);
+  }
+  
+  .number {
+    background-color: #e0e0e0;
+  }
+  
+  .operator, .calculate {
+    background-color: #23599a;
+    color: white;
+  }
+  
+  .clear {
+    background-color: #110201;
+    color: rgb(255, 255, 255);
+  }
+  /* Add the .shapes class to the buttons */
+.shapes {
+    color: transparent;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-shadow: 0 0 40px #fff;
+    font: bolder 320pt/320pt monospace;
+    mix-blend-mode: multiply;
+  }
+  
+
+  
+  
